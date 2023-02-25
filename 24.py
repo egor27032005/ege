@@ -1,0 +1,12 @@
+file=open('58250_1599326850_doc (1).txt', 'r')
+s=file.readline().strip()
+s=s.replace("AA", "A A")
+s=s.replace("BB", "B B")
+s=s.replace("CC", "C C")
+s=s.replace("AA", "A A")
+s=s.replace("BB", "B B")
+s=s.replace("CC", "C C")
+all_lines=s.split()
+x=s.split()
+print(len(max(x,key=len)))        
+# ответ 35
