@@ -1,9 +1,9 @@
 def f(x, y, h):
-    if h == 4 and x + y >= 83:
+    if h == 4 and x + y >= 57:
         return 1
-    elif h == 4 and x + y < 83:
+    elif h == 4 and x + y <= 57:
         return 0
-    elif x + y >= 83 and h < 4:
+    elif x + y >= 57 and h < 4:
         return 0
     else:
         if h % 2 != 0:
@@ -11,6 +11,6 @@ def f(x, y, h):
         else:
             return f(x + 1, y, h + 1) and f(x, y + 1, h + 1) and f(x, y * 2, h + 1) and f(x * 2, y, h + 1)  # стратегия проигравшего(любой ход)
  
-for x in range(1, 74):
-    if f(x, 9, 1) == 1:
+for x in range(1, 51):
+    if f(x, 5, 1) == 1:
         print("Задача 20:", x)

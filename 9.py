@@ -6,5 +6,6 @@ for i in range(0,l,6):
     for j in range(6):
         mdp.append(n[i+j])
     mdp.sort()
-    for j in range()
-    print(mdp)
+    for j in range(5):
+        print(mdp)
+        

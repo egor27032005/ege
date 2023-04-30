@@ -1,8 +1,10 @@
-y = "0123456789ABC"
+y = "0123456789AB"
 for x in y:
-    a = "42A"+x+"1"
-    b = "B"+x+"81"
-    a = int(a, 13)
-    b = int(b, 13)
-    if (a-b) % 9 == 0:
-        print(x, (a-b) // 9)
+    a = "19"+x+"61"
+    b = "3393"+x
+    c="60"+x+"05"
+    a = int(a, 12)
+    b = int(b, 17)
+    c = int(c, 15)
+    if a+b==c:
+        print(x,a+b)

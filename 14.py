@@ -1,10 +1,8 @@
-x = 87
+##9**
+x = 9**200+3**100-7
 s = ''
-for i in range(2,10):
-    s=''
-    x=87
-    while x != 0:
-        s += str(x % i) 
-        x //= i
-    s = s[::-1]
-    print(i,s)
+while x != 0:
+    s += str(x % 3) 
+    x //= 3
+s = s[::-1]
+print(s.count("2"))
